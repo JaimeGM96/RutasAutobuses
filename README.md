@@ -24,6 +24,17 @@ Para comprobar que el código funciona correctamente, se puede ejecutar el sigui
 cargo test
 ```
 
+## Contenedor de pruebas
+Para construir el contenedor, se puede ejecutar el siguiente comando:
+```bash
+docker build --no-cache -t jaimegm96/rutasautobuses .
+```
+
+Para ejecutar el contenedor, se puede ejecutar el siguiente comando:
+```bash
+docker run -tv `pwd`:/app/test jaimegm96/rutasautobuses
+```
+
 ## Documentación
 - [Configuración de git](docs/configuracion-git.md).
 - [Usuarios de la aplicación](docs/usuarios.md).
@@ -31,3 +42,5 @@ cargo test
 - [Milestones](docs/milestones.md).
 - [Gestor de dependencias](docs/gestor-dependencias.md).
 - [Gestor de tareas](docs/gestor-tareas.md).
+- [Herramientas de testing](docs/herramienta-testing.md).
+- [Imagen del contenedor](docs/imagen-contenedor.md).
